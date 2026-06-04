@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Bleach - Detaylar ve Kaynaklar</title>
+            <title>Bleach - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/1541/147774.jpg" alt="Bleach Afişi" class="poster">
                 <div class="details">
                     <h1>Bleach</h1>
-                    <span class="synonyms">'בליץ • BLEACH • BLEACH - ブリーチ - • BTV</span>
+                    <span class="synonyms">'בליץ • BLEACH • BLEACH - ブリーチ - • BTV • Izbeljivač • `בליץ • bleach tv • Белина • Блиич • Блийч • Блич • Бліч • Отбеливатель • بليتش • بليچ - Persian • بلیچ • บลีช เทพมรณะ • เทพมรณะ • ブリーチ • 境·界 • 死神 • 漂靈 • 블리치</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.00</strong></div>
                         <div class="info-card"><span>Format</span><strong>TV</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>366</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>24 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>24 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>FALL 2004</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> pierrot co., ltd.</p>
-                    <p><strong>Yapımcılar:</strong> aniplex, dentsu inc., shueisha, studio kelmadick, studio pierrot, tv tokyo music, viz media</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">achronological order</span><span class="tag">action</span><span class="tag">adapted into japanese movie</span><span class="tag">adapted into other media</span><span class="tag">adventure</span><span class="tag">afterlife</span><span class="tag">age regression</span><span class="tag">amnesia</span><span class="tag">animal abuse</span><span class="tag">anthropomorphism</span><span class="tag">asia</span><span class="tag">based on a manga</span><span class="tag">boy meets girl</span><span class="tag">call my name</span><span class="tag">calling your attacks</span>
+                        <span class="tag">achronological order</span><span class="tag">action</span><span class="tag">adapted into japanese movie</span><span class="tag">adapted into other media</span><span class="tag">adventure</span><span class="tag">afterlife</span><span class="tag">age regression</span><span class="tag">amnesia</span><span class="tag">animal abuse</span><span class="tag">anthropomorphism</span><span class="tag">asia</span><span class="tag">based on a manga</span><span class="tag">boy meets girl</span><span class="tag">call my name</span><span class="tag">calling your attacks</span><span class="tag">cannibalism</span><span class="tag">canon filler</span><span class="tag">card games</span><span class="tag">centaur</span><span class="tag">chain</span><span class="tag">clone</span><span class="tag">comedy</span><span class="tag">conspiracy</span><span class="tag">contemporary fantasy</span><span class="tag">damsel in distress</span><span class="tag">dark-skinned girl</span><span class="tag">defeat means friendship</span><span class="tag">demi-humans</span><span class="tag">demon</span><span class="tag">demons</span><span class="tag">deus ex machina</span><span class="tag">developing powers</span><span class="tag">disability</span><span class="tag">dissociative identities</span><span class="tag">drama</span><span class="tag">drastic change of life</span><span class="tag">earth</span><span class="tag">ensemble cast</span><span class="tag">exorcism</span><span class="tag">facial distortion</span><span class="tag">factions</span><span class="tag">family life</span><span class="tag">family without mother</span><span class="tag">fantasy</span><span class="tag">fantasy world</span><span class="tag">fictional location</span><span class="tag">fighting</span><span class="tag">fighting-shounen</span><span class="tag">friendship</span><span class="tag">fugitive</span><span class="tag">ghost</span><span class="tag">guns</span><span class="tag">has fillers</span><span class="tag">henshin</span><span class="tag">hero complex</span><span class="tag">hero of strong character</span><span class="tag">high school</span><span class="tag">immature</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">kaiju</span><span class="tag">karuta</span><span class="tag">kuudere</span><span class="tag">language barrier</span><span class="tag">lethal chef</span><span class="tag">magic</span><span class="tag">magic weapons</span><span class="tag">male protagonist</span><span class="tag">manga</span><span class="tag">martial arts</span><span class="tag">medium awareness</span><span class="tag">megalomaniac</span><span class="tag">memory manipulation</span><span class="tag">monsters</span><span class="tag">nearly almighty protagonist</span><span class="tag">ninja</span><span class="tag">nobleman</span><span class="tag">ojou-sama</span><span class="tag">parallel universe</span><span class="tag">parallel world</span><span class="tag">perpetual ongoing</span><span class="tag">place</span><span class="tag">plot continuity</span><span class="tag">present</span><span class="tag">protection complex</span><span class="tag">psi-powers</span><span class="tag">reincarnation</span><span class="tag">rescue</span><span class="tag">royal affairs</span><span class="tag">school</span><span class="tag">school life</span><span class="tag">shinigami</span><span class="tag">shounen</span><span class="tag">slapstick</span><span class="tag">slow when it comes to love</span><span class="tag">spearplay</span><span class="tag">speculative fiction</span><span class="tag">spirits</span><span class="tag">storytelling</span><span class="tag">super power</span><span class="tag">superhumans</span><span class="tag">supernatural</span><span class="tag">superpowers</span><span class="tag">sword</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">swords swordfighting developing powers</span><span class="tag">talking is a free action</span><span class="tag">tanned skin</span><span class="tag">time</span><span class="tag">time manipulation</span><span class="tag">time skip</span><span class="tag">tomboy</span><span class="tag">tragedy</span><span class="tag">tropes</span><span class="tag">tsundere</span><span class="tag">undead</span><span class="tag">urban fantasy</span><span class="tag">vampire</span><span class="tag">violence</span><span class="tag">weekly shounen jump</span><span class="tag">widescreen transition</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Kaze no Tani no Nausicaä - Detaylar ve Kaynaklar</title>
+            <title>Kaze no Tani no Nausicaä - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://myanimelist.net/images/anime/10/75914.jpg" alt="Kaze no Tani no Nausicaä Afişi" class="poster">
                 <div class="details">
                     <h1>Kaze no Tani no Nausicaä</h1>
-                    <span class="synonyms">Chiến binh thung lũng gió • Guerreros del Viento • Kaze no Tani no Naushika • Kaze no Tani no Nausicaa</span>
+                    <span class="synonyms">Chiến binh thung lũng gió • Guerreros del Viento • Kaze no Tani no Naushika • Kaze no Tani no Nausicaa • Kaze no Tani no Nausicā • La Princesse des Etoiles • La Princesse des Étoiles • La princesse des étoiles • Le Combat des Princes de l’Espace • Naushika • Nausicaa • Nausicaa aus dem Tal der Winde • Nausicaa del Valle del Viento • Nausicaa della Valle del Vento • Nausicaa din Valea Vântului • Nausicaa fra vindenes dal • Nausicaa of the Valley of the Wind • Nausicaä • Nausicaä - Prinsessen fra Vindens Dal • Nausicaä - prinsessen fra Vindens dal • Nausicaä aus dem Tal der Winde • Nausicaä de la Vall del Vent • Nausicaä de la Vallée du Vent • Nausicaä de la vallée du vent • Nausicaä del Valle del Viento • Nausicaä del valle del viento • Nausicaä della Valle del Vento • Nausicaä della Valle del vento • Nausicaä della valle del vento • Nausicaä do Vale do Vento • Nausicaä fra Vindenes Dal • Nausicaä från Vindarnas dal • Nausicaä från vindarnas dal • Nausicaä iz Dežele vetra • Nausicaä of the Valley of the Wind • Nausicaä z Doliny Wiatru • Nausicaä, a Princesa do Vale do Vento • Nausicaä: Guerreros del viento • Nausika iš Vėjų slėnio • Nausikaja iz Doline vjetra • Nausikaja iz doline Vetra • Nausikaja iz doline Vjetra • Nausikaja iš Vėjų slėnio • Nauszika - A szél harcosai • Naušika z Větrného údolí • Navsíka úr dal vindsins • Nàng công chúa ở Thung lũng gió • Rüzgarlı Vadi • Rüzgârlı Vadi • SternenKrieger • Sternenkrieger - Warriors of the Wind • Sternenkrieger: Warriors of the Wind • Tuulen laakson Nausicaä • Tuulte oru Nausikaa • Vindens Krigare • Warriors of the Wind • Warriors of the Wind (1987 US Release Title) • Η Ναυσικά της Κοιλάδας του Ανέμου • Η Ναυσικά της Κοιλάδας των Ανέμων • Ναυσικαα • Οι μαχητές του ανέμου • Навсикая из Долины Ветров • Навсикая из долины ветров • Навсікая • Навсікая Долини вітру • Навсікая з Долини Вітрів • Наусика • Наусика от Долината на Вятъра • Наусіка з Долини Вітрів • Наушіка Долини Вітру • הנסיכה מעמק הרוחות • ناوسيكا أميرة وادي الرياح • ناوسيكا فتاة وادي الرياح • राजकुमारी नौसिका की जंग • มหาสงครามหุบเขาแห่งสายลม • 風の谷のナウシカ • 風之谷 • 风之谷 • 바람 계곡의 나우시카 • 바람계곡의 나우시카 • 바람의 골짜기의 나우시카</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.32</strong></div>
                         <div class="info-card"><span>Format</span><strong>MOVIE</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>1</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>117 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>117 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>WINTER 1984</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> studio ghibli inc., top craft, topcraft</p>
-                    <p><strong>Yapımcılar:</strong> gkids, omnibus promotion, studio ghibli, studio hibari, tokuma shoten, topcraft, walt disney studios</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">action</span><span class="tag">adventure</span><span class="tag">alternative world</span><span class="tag">anachronism</span><span class="tag">anti-war</span><span class="tag">apocalyptic fiction</span><span class="tag">aviation</span><span class="tag">award winning</span><span class="tag">awards</span><span class="tag">based on a manga</span><span class="tag">coming of age</span><span class="tag">cosmic horror</span><span class="tag">cult</span><span class="tag">detailed landscapes</span><span class="tag">disaster</span>
+                        <span class="tag">action</span><span class="tag">adventure</span><span class="tag">alternative world</span><span class="tag">anachronism</span><span class="tag">anti-war</span><span class="tag">apocalyptic fiction</span><span class="tag">aviation</span><span class="tag">award winning</span><span class="tag">awards</span><span class="tag">based on a manga</span><span class="tag">coming of age</span><span class="tag">cosmic horror</span><span class="tag">cult</span><span class="tag">detailed landscapes</span><span class="tag">disaster</span><span class="tag">drama</span><span class="tag">dystopian</span><span class="tag">eco-horror</span><span class="tag">ecology</span><span class="tag">elderly protagonist</span><span class="tag">end of the world</span><span class="tag">environmental</span><span class="tag">environmentalism</span><span class="tag">fantasy</span><span class="tag">female protagonist</span><span class="tag">future</span><span class="tag">giant insects</span><span class="tag">guns</span><span class="tag">heroine of strong character</span><span class="tag">horticulture</span><span class="tag">insects</span><span class="tag">insects of doom</span><span class="tag">japanese production</span><span class="tag">kaiju</span><span class="tag">lost civilization</span><span class="tag">lost technology</span><span class="tag">manga</span><span class="tag">military</span><span class="tag">mina</span><span class="tag">monster</span><span class="tag">nature strikes back</span><span class="tag">nobleman</span><span class="tag">nudity</span><span class="tag">oofuji noburou award</span><span class="tag">orphan</span><span class="tag">philosophy</span><span class="tag">place</span><span class="tag">politics</span><span class="tag">post apocalypse</span><span class="tag">post-apocalyptic</span><span class="tag">primarily adult cast</span><span class="tag">revenge</span><span class="tag">sci-fi</span><span class="tag">science fiction</span><span class="tag">science-fiction</span><span class="tag">sociocultural evolution</span><span class="tag">speculative fiction</span><span class="tag">stand-alone movie</span><span class="tag">steampunk</span><span class="tag">strong female lead</span><span class="tag">struggle to survive</span><span class="tag">survival</span><span class="tag">swordplay</span><span class="tag">tank warfare</span><span class="tag">tanks</span><span class="tag">time</span><span class="tag">travel</span><span class="tag">tropes</span><span class="tag">underground</span><span class="tag">violence</span><span class="tag">war</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

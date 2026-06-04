@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Josee to Tora to Sakana-tachi - Detaylar ve Kaynaklar</title>
+            <title>Josee to Tora to Sakana-tachi - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/1714/108892.jpg" alt="Josee to Tora to Sakana-tachi Afişi" class="poster">
                 <div class="details">
                     <h1>Josee to Tora to Sakana-tachi</h1>
-                    <span class="synonyms">Josee • Josee to Tora to Sakanatachi • Josee, El Tigre i Els Peixos • Josee, The Tiger and the Fish</span>
+                    <span class="synonyms">Josee • Josee to Tora to Sakanatachi • Josee, El Tigre i Els Peixos • Josee, The Tiger and the Fish • Josee, The Tiger, and the Fish • Josee, el Tigre i els Peixos • Josee, el Tigre y les Peces • Josee, el Tigre y los Peces • Josee, el tigre i els peixos • Josee, el tigre y los peces • Josee, la Tigre e i Pesci • Josee, la tigre e i pesci • Josee, the Tiger and the Fish • Josee, the Tiger and the Fish. • Josee: Khi nàng thơ yêu • Josie, der Tiger und die Fische • Josie, der Tiger und die Fische. • Josée, Le Tigre et Les Poissons. • Josée, la Tigre e i Pesci • Josée, le Tigre et les Poissons • Josée, le Tigre et les Poissons. • Josée, le tigre et les poissons • Joze to Tora to Sakana-tachi • joseetora • the Tiger and the Fish • the Tiger and the Fish. • Žose, tigras ir žuvis • Её заветное желание • Жозе • Жозе, тигр и рыба • тигр і риба • โจเซ่ กับเสือและหมู่ปลา • โจเสะ กับเสือและมวลหมู่ปลา • ジョゼと虎と魚たち • ジョゼ虎 • 乔西的虎与鱼 • 喬瑟與虎與魚群 • 조제, 호랑이 그리고 물고기들</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.32</strong></div>
                         <div class="info-card"><span>Format</span><strong>MOVIE</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>1</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>98 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>98 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>FALL 2020</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> bones inc.</p>
-                    <p><strong>Yapımcılar:</strong> bones, east japan marketing & communications, inc., jr higashi nihon kikaku, kadokawa, kddi, movie walker, shochiku, sonilude, tbs radio & communications, inc., toy's factory</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">adapted into japanese movie</span><span class="tag">adapted into other media</span><span class="tag">adult cast</span><span class="tag">asia</span><span class="tag">based on a novel</span><span class="tag">coastal</span><span class="tag">college</span><span class="tag">coming of age</span><span class="tag">disability</span><span class="tag">drama</span><span class="tag">drawing</span><span class="tag">earth</span><span class="tag">female protagonist</span><span class="tag">first love</span><span class="tag">following one's dream</span>
+                        <span class="tag">adapted into japanese movie</span><span class="tag">adapted into other media</span><span class="tag">adult cast</span><span class="tag">asia</span><span class="tag">based on a novel</span><span class="tag">coastal</span><span class="tag">college</span><span class="tag">coming of age</span><span class="tag">disability</span><span class="tag">drama</span><span class="tag">drawing</span><span class="tag">earth</span><span class="tag">female protagonist</span><span class="tag">first love</span><span class="tag">following one's dream</span><span class="tag">heterosexual</span><span class="tag">hospital</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">josei</span><span class="tag">love triangle</span><span class="tag">male protagonist</span><span class="tag">mermaid</span><span class="tag">novel</span><span class="tag">ocean</span><span class="tag">osaka</span><span class="tag">painting</span><span class="tag">place</span><span class="tag">predominantly adult cast</span><span class="tag">present</span><span class="tag">primarily adult cast</span><span class="tag">real-world location</span><span class="tag">rehabilitation</span><span class="tag">reluctant heroine</span><span class="tag">romance</span><span class="tag">romantic drama</span><span class="tag">school life</span><span class="tag">scuba diving</span><span class="tag">sentimental drama</span><span class="tag">slice of life</span><span class="tag">stand-alone movie</span><span class="tag">stoic hero</span><span class="tag">the arts</span><span class="tag">time</span><span class="tag">time skip</span><span class="tag">tragedy</span><span class="tag">tsundere</span><span class="tag">underwater</span><span class="tag">underwater diving</span><span class="tag">university</span><span class="tag">unrequited love</span><span class="tag">visual arts</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

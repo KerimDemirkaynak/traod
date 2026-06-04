@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Mononoke Hime - Detaylar ve Kaynaklar</title>
+            <title>Mononoke Hime - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/1355/147277.jpg" alt="Mononoke Hime Afişi" class="poster">
                 <div class="details">
                     <h1>Mononoke Hime</h1>
-                    <span class="synonyms">A Princesa Mononoke • A vadon hercegnője • Công chúa Mononoke • Công chúa sói</span>
+                    <span class="synonyms">A Princesa Mononoke • A vadon hercegnője • Công chúa Mononoke • Công chúa sói • Księżniczka Mononoke • La Princesa Mononoke • La Principessa Mononoke • La princesa Mononoke • Mononoke Princess • Mononoke Prinsessa • Mononoke-hime • Prenses Mononoke • Princesa Mononoke • Princese Mononoke • Princess Mononoke • Princesse Mononoké • Princesė Mononokė • Princeza Mononoke • Princezna Mononoke • Princezná Mononoke • Principessa Mononoke • Prinsessa Mononoke • Prinsessan Mononoke • Prinsesse Mononoke • Printsess Mononoke • Prinzessin Mononoke • Prinţesa Mononoke • mononoke (1997) • Πριγκίπισσα Μονονόκε • Мононокэ Гүнж • Принцеза Мононоке • Принцеса Мононоке • Принцеса-мононоке • Принцесса Мононоке • Принцесса Мононокэ • הנסיכה מונונוקי • الأميرة مونونوكي • الأميرة مونونوكيه • شاهزاده مونونوکه • राजकुमारी मोनोनोके • เจ้าหญิงจิตวิญญาณแห่งพงไพร • もののけ姫 • 幽灵公主 • 幽靈公主 • 魔法公主 • 모노노케 히메 • 원령공주</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.61</strong></div>
                         <div class="info-card"><span>Format</span><strong>MOVIE</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>1</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>133 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>133 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>SUMMER 1997</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> studio ghibli inc.</p>
-                    <p><strong>Yapımcılar:</strong> dentsu inc., gkids, nippon television network corporation, omnibus promotion, studio ghibli, tokuma shoten</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">action</span><span class="tag">adventure</span><span class="tag">against destiny</span><span class="tag">angst</span><span class="tag">animals</span><span class="tag">animism</span><span class="tag">anthropomorphism</span><span class="tag">anthropomorphs</span><span class="tag">anti-war</span><span class="tag">archery</span><span class="tag">asia</span><span class="tag">award winning</span><span class="tag">body horror</span><span class="tag">coming of age</span><span class="tag">curse</span>
+                        <span class="tag">action</span><span class="tag">adventure</span><span class="tag">against destiny</span><span class="tag">angst</span><span class="tag">animals</span><span class="tag">animism</span><span class="tag">anthropomorphism</span><span class="tag">anthropomorphs</span><span class="tag">anti-war</span><span class="tag">archery</span><span class="tag">asia</span><span class="tag">award winning</span><span class="tag">body horror</span><span class="tag">coming of age</span><span class="tag">curse</span><span class="tag">curses</span><span class="tag">deforestation</span><span class="tag">deity</span><span class="tag">demon</span><span class="tag">demons</span><span class="tag">disability</span><span class="tag">disaster</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">eco-horror</span><span class="tag">environmental</span><span class="tag">environmentalism</span><span class="tag">fairy tale</span><span class="tag">fantasy</span><span class="tag">fate</span><span class="tag">female protagonist</span><span class="tag">feudal japan</span><span class="tag">feudal warfare</span><span class="tag">folklore</span><span class="tag">forest</span><span class="tag">forest spirit</span><span class="tag">forests</span><span class="tag">gods</span><span class="tag">gore</span><span class="tag">guns</span><span class="tag">hero of strong character</span><span class="tag">heroine of strong character</span><span class="tag">historical</span><span class="tag">indigenous cultures</span><span class="tag">japan</span><span class="tag">japanese mythology</span><span class="tag">japanese production</span><span class="tag">kaiju</span><span class="tag">kamis</span><span class="tag">magical creatures</span><span class="tag">male protagonist</span><span class="tag">man vs nature</span><span class="tag">mina</span><span class="tag">muromachi era</span><span class="tag">muromachi period</span><span class="tag">mythology</span><span class="tag">new</span><span class="tag">old asia</span><span class="tag">original work</span><span class="tag">outdoor activities</span><span class="tag">past</span><span class="tag">philosophy</span><span class="tag">place</span><span class="tag">primarily adult cast</span><span class="tag">revenge</span><span class="tag">romance</span><span class="tag">royalty</span><span class="tag">rural</span><span class="tag">samurai</span><span class="tag">shintoism</span><span class="tag">slavery</span><span class="tag">speculative fiction</span><span class="tag">spirits</span><span class="tag">splatter</span><span class="tag">stand-alone movie</span><span class="tag">strong female lead</span><span class="tag">strong male lead</span><span class="tag">struggle to survive</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">time</span><span class="tag">tomboy</span><span class="tag">tragedy</span><span class="tag">travel</span><span class="tag">tsundere</span><span class="tag">urban fantasy</span><span class="tag">violence</span><span class="tag">war</span><span class="tag">wilderness</span><span class="tag">wolves</span><span class="tag">youkai</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

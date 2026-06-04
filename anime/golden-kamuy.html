@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Golden Kamuy - Detaylar ve Kaynaklar</title>
+            <title>Golden Kamuy - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://myanimelist.net/images/anime/1145/90880.jpg" alt="Golden Kamuy Afişi" class="poster">
                 <div class="details">
                     <h1>Golden Kamuy</h1>
-                    <span class="synonyms">Goka s1 • Golden Kamui • Золотое Божество • ゴールデンカムイ</span>
+                    <span class="synonyms">Goka s1 • Golden Kamui • Золотое Божество • ゴールデンカムイ • 黃金神威 • 黄金神威 • 골든 카무이</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 7.88</strong></div>
                         <div class="info-card"><span>Format</span><strong>TV</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>12</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>23 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>23 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>SPRING 2018</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> geno studio inc.</p>
-                    <p><strong>Yapımcılar:</strong> east japan marketing & communications, inc., funimation, golden kamuy production committee, good smile company, jr east marketing & communications, jr higashi nihon kikaku, magic capsule, nbcuniversal entertainment japan, sammy, shueisha, tokyo mx, twin engine</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">3d cg animation</span><span class="tag">absurdist humour</span><span class="tag">action</span><span class="tag">adult cast</span><span class="tag">adventure</span><span class="tag">ainu</span><span class="tag">ainu mythology</span><span class="tag">alcohol</span><span class="tag">alternative past</span><span class="tag">animal abuse</span><span class="tag">anti-hero</span><span class="tag">anti-war</span><span class="tag">archery</span><span class="tag">asia</span><span class="tag">assassins</span>
+                        <span class="tag">3d cg animation</span><span class="tag">absurdist humour</span><span class="tag">action</span><span class="tag">adult cast</span><span class="tag">adventure</span><span class="tag">ainu</span><span class="tag">ainu mythology</span><span class="tag">alcohol</span><span class="tag">alternative past</span><span class="tag">animal abuse</span><span class="tag">anti-hero</span><span class="tag">anti-war</span><span class="tag">archery</span><span class="tag">asia</span><span class="tag">assassins</span><span class="tag">bakumatsu - meiji period</span><span class="tag">based on a manga</span><span class="tag">body horror</span><span class="tag">bullet time</span><span class="tag">canon filler</span><span class="tag">cgi</span><span class="tag">chases</span><span class="tag">china</span><span class="tag">civil war</span><span class="tag">comedy</span><span class="tag">conspiracy</span><span class="tag">cooking</span><span class="tag">crime</span><span class="tag">culture clash</span><span class="tag">dark comedy</span><span class="tag">disaster</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">eating of humans</span><span class="tag">educational</span><span class="tag">ensemble cast</span><span class="tag">episodic</span><span class="tag">factions</span><span class="tag">fighting</span><span class="tag">food</span><span class="tag">funny expressions</span><span class="tag">gender bending</span><span class="tag">gore</span><span class="tag">gotta catch them all</span><span class="tag">gunfights</span><span class="tag">gunplay</span><span class="tag">guns</span><span class="tag">hero of strong character</span><span class="tag">historical</span><span class="tag">hokkaido</span><span class="tag">human cannibalism</span><span class="tag">idealism</span><span class="tag">indigenous cultures</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">journey</span><span class="tag">kidnapping</span><span class="tag">lgbtq+ themes</span><span class="tag">male protagonist</span><span class="tag">manga</span><span class="tag">medicine</span><span class="tag">meiji era</span><span class="tag">military</span><span class="tag">moral dilemma</span><span class="tag">mutilation</span><span class="tag">mystery</span><span class="tag">narration</span><span class="tag">oiran</span><span class="tag">outdoor activities</span><span class="tag">past</span><span class="tag">penis jokes</span><span class="tag">place</span><span class="tag">post-war</span><span class="tag">predominantly adult cast</span><span class="tag">primarily adult cast</span><span class="tag">primarily male cast</span><span class="tag">prison</span><span class="tag">promise</span><span class="tag">psychological</span><span class="tag">racism</span><span class="tag">red-light district</span><span class="tag">religion</span><span class="tag">revenge</span><span class="tag">rotten world</span><span class="tag">running gag</span><span class="tag">sake</span><span class="tag">season</span><span class="tag">seinen</span><span class="tag">sex</span><span class="tag">sexual humour</span><span class="tag">shinsengumi</span><span class="tag">slapstick</span><span class="tag">snowscape</span><span class="tag">speculative fiction</span><span class="tag">spiritualism</span><span class="tag">stoic heroine</span><span class="tag">storytelling</span><span class="tag">strong female lead</span><span class="tag">strong male lead</span><span class="tag">survival</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">teamwork</span><span class="tag">thriller</span><span class="tag">time</span><span class="tag">tone changes</span><span class="tag">torture</span><span class="tag">tragedy</span><span class="tag">transgender</span><span class="tag">trauma</span><span class="tag">treasure hunters</span><span class="tag">treasure hunting</span><span class="tag">twins</span><span class="tag">violence</span><span class="tag">war</span><span class="tag">war-zone realities</span><span class="tag">western</span><span class="tag">wilderness</span><span class="tag">winter</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

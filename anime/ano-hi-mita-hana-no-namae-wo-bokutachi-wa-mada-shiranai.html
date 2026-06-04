@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. - Detaylar ve Kaynaklar</title>
+            <title>Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/5/79697.jpg" alt="Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai. Afişi" class="poster">
                 <div class="details">
                     <h1>Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.</h1>
-                    <span class="synonyms">Ano Hana • Ano Hana: A Flor que Vimos Naquele Dia • Ano Hana: Ancora non conosciamo il nome del fiore che abbiamo visto quel giorno • Ano Hi Mita Hana no Namae o Boku-tachi wa Mada Shiranai.</span>
+                    <span class="synonyms">Ano Hana • Ano Hana: A Flor que Vimos Naquele Dia • Ano Hana: Ancora non conosciamo il nome del fiore che abbiamo visto quel giorno • Ano Hi Mita Hana no Namae o Boku-tachi wa Mada Shiranai. • Ano Hi Mita Hana no Namae o Bokutachi wa Mada Shiranai. • AnoHana • AnoHana: Ancora non conosciamo il nome del fiore che abbiamo visto quel giorno • AnoHana: Die Blume • AnoHana: Die Blume, die Wir an Jenem Tag Sahen • AnoHana: Die Blume, die wir an jenem Tag sahen • AnoHana: The Flower We Saw That Day • AnoHana: ancora non conosciamo il nome del fiore che abbiamo visto quel giorno • Anohana: The Flower We Saw That Day • Nadal nie znamy nazwy kwiatu • O Gün Gördüğümüz Çiçeğin Adını Hala Bilmiyoruz • We Still Don't Know the Name of the Flower We Saw That Day. • We Still Don’t Know the Name of the Flower We Saw That Day. • Wir wissen noch immer nicht den Namen der Blume, die wir an jenem Tag gesehen haben. • anohana • anohana: The Flower We Saw That Day • anohana: The Flower We Saw that Day • die wir an jenem Tag sahen • który widzieliśmy tamtego dnia. • А нам всё невдомёк • Ано Хана • Все още не знаем името на цветето, което видяхме онзи ден. • Невиданный цветок • Невідома квітка • Тэр Нэгэн Өдөр Харсан Цэцгийн Нэрийг Бид Одоо ч Мэдэхгүй • Тэр Цэцэг • как звался тот цветок • що ми побачили того дня • אנוהאנה הפרח שראינו ביום הזה • אנוהאנה: הפרח שראינו ביום ההוא • אנחנו עדיין לא יודעים את השם של הפרח שראינו באותו היום • لازلنا لا نعرف أسماء الزهور التي رأيناها في ذلك اليوم • هنوز اسم گلی که آن روز دیدیم را نمی دانیم • ดอกไม้ มิตรภาพ และ ความทรงจำ • อาโนะฮานะ ดอกไม้ ความทรงจำ และมิตรภาพ • あの日見た花の名前を僕達はまだ知らない. • あの日見た花の名前を僕達はまだ知らない。 • あの花 • 我们仍未知道那天所看见的花的名字. • 我們仍未知道那天所看見的花名。 • 未聞花名 • 未闻花名 • 那日所見花兒之名我們仍未知曉 • 那日所见花儿之名我们仍未知晓 • 那朵花 • 그날 본 꽃의 이름을 우리는 아직 모른다 • 아노하나</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.35</strong></div>
                         <div class="info-card"><span>Format</span><strong>TV</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>11</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>22 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>22 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>SPRING 2011</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> a-1 pictures inc.</p>
-                    <p><strong>Yapımcılar:</strong> aniplex of america, anohana production committee, dentsu inc., fuji pacific music publishing, fuji television network, fuji tv, fujipacific music, hanabee entertainment</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">3d cg animation</span><span class="tag">adapted into jdrama</span><span class="tag">adapted into other media</span><span class="tag">angst</span><span class="tag">asia</span><span class="tag">be careful what you wish for</span><span class="tag">broken friendship</span><span class="tag">bullying</span><span class="tag">cgi</span><span class="tag">childhood friends</span><span class="tag">childhood memory</span><span class="tag">comedy</span><span class="tag">coming of age</span><span class="tag">communication with the dead</span><span class="tag">cross-dressing</span>
+                        <span class="tag">3d cg animation</span><span class="tag">adapted into jdrama</span><span class="tag">adapted into other media</span><span class="tag">angst</span><span class="tag">asia</span><span class="tag">be careful what you wish for</span><span class="tag">broken friendship</span><span class="tag">bullying</span><span class="tag">cgi</span><span class="tag">childhood friends</span><span class="tag">childhood memory</span><span class="tag">comedy</span><span class="tag">coming of age</span><span class="tag">communication with the dead</span><span class="tag">cross-dressing</span><span class="tag">crossdressing</span><span class="tag">daily life</span><span class="tag">death of a loved one</span><span class="tag">delinquent</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">eating pocky</span><span class="tag">family life</span><span class="tag">family without mother</span><span class="tag">female protagonist</span><span class="tag">flashback</span><span class="tag">found family</span><span class="tag">friendship</span><span class="tag">ghost</span><span class="tag">ghosts</span><span class="tag">growing up</span><span class="tag">hero of weak character</span><span class="tag">heroine of weak character</span><span class="tag">heterosexual</span><span class="tag">hikikomori</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">jealousy</span><span class="tag">kuudere</span><span class="tag">love polygon</span><span class="tag">love triangle</span><span class="tag">magical realism</span><span class="tag">male protagonist</span><span class="tag">melancholy</span><span class="tag">melodrama</span><span class="tag">mono no aware</span><span class="tag">multi-anime projects</span><span class="tag">new</span><span class="tag">noitamina</span><span class="tag">nostalgia</span><span class="tag">original work</span><span class="tag">place</span><span class="tag">plot continuity</span><span class="tag">present</span><span class="tag">primarily teen cast</span><span class="tag">real-world location</span><span class="tag">rehabilitation</span><span class="tag">remastered version available</span><span class="tag">romance</span><span class="tag">rural</span><span class="tag">school life</span><span class="tag">season</span><span class="tag">seinen</span><span class="tag">slice of life</span><span class="tag">slow when it comes to love</span><span class="tag">speculative fiction</span><span class="tag">summer</span><span class="tag">supernatural</span><span class="tag">time</span><span class="tag">tragedy</span><span class="tag">trauma</span><span class="tag">tsundere</span><span class="tag">undead</span><span class="tag">unrequited love</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

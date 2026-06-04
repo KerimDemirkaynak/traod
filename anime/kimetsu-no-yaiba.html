@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Kimetsu no Yaiba - Detaylar ve Kaynaklar</title>
+            <title>Kimetsu no Yaiba - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Kimetsu no Yaiba Afişi" class="poster">
                 <div class="details">
                     <h1>Kimetsu no Yaiba</h1>
-                    <span class="synonyms">Blade of Demon Destruction • Demon Slayer • Demon Slayer - A démonvadász • Demon Slayer - Kimetsu no Yaiba</span>
+                    <span class="synonyms">Blade of Demon Destruction • Demon Slayer • Demon Slayer - A démonvadász • Demon Slayer - Kimetsu no Yaiba • Demon Slayer: Kimetsu no Yaiba • Demon Slayer: Kimetsu no Yaiba - Tanjiro Kamado, Unwavering Resolve Arc • Demon Slayer: Kimetsu no Yaiba: Bonds of Siblings • Demon Slayer: Ďáblova čepel • Demon-slaying blade • Gardiáns da noite • Guardianes De La Noche: Kimetsu no Yaiba • Guardianes de la Noche: Kimetsu no Yaiba • Guardianes de la noche • Guardianes de la noche - Kimetsu no Yaiba • Guardians de la nit • Guardians de la nit - Kimetsu no Yaiba • Guardians de la nit: Kimetsu no Yaiba • Kimetsu no Yaiba: Kyoudai no Kizuna • Kimetsu no Yaiba: Riisshi Hen • KnY • KnY s1 • Miecz zabójcy demonów – Kimetsu no Yaiba • O Arco da Vontade Inabalável de Tanjiro Kamado • Tanjiro Kamado, Arco da Determinação Inabalável • Thanh gươm diệt quỷ • Ucigașul de demoni • Zabiják démonů • ds s1 • İblis Keser • ΚΥΝΗΓΟΣ ΔΑΙΜΟΝΩΝ: KIMETSU NO YAIBA • Истребитель демонов • Истребитель демонов: Kimetsu no Yaiba • Клинок • Клинок убивающий демонов • Клинок, рассекающий демонов • рассекающий демонов • דימון סלייר • הלהב קוטל השדים • קוטל השדים • קוטל השדים: קימטסו נו יאיבה • شیطان کش • قاتل الشياطين • ดาบพิฆาตอสูร • 鬼滅の刃 • 鬼滅の刃-兄妹の絆- • 鬼滅之刃 • 鬼灭之刃 • 귀멸의 칼날</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 8.47</strong></div>
                         <div class="info-card"><span>Format</span><strong>TV</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>26</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>23 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>23 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>SPRING 2019</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> ufotable, inc.</p>
-                    <p><strong>Yapımcılar:</strong> aniplex of america, shueisha, studio mausu, ufotable</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">3d cg animation</span><span class="tag">action</span><span class="tag">action drama</span><span class="tag">adventure</span><span class="tag">anachronisms</span><span class="tag">animals</span><span class="tag">asia</span><span class="tag">asymmetric warfare</span><span class="tag">award winning</span><span class="tag">awards</span><span class="tag">bakumatsu - meiji period</span><span class="tag">based on a manga</span><span class="tag">betrayal</span><span class="tag">bishounen</span><span class="tag">black humour</span>
+                        <span class="tag">3d cg animation</span><span class="tag">action</span><span class="tag">action drama</span><span class="tag">adventure</span><span class="tag">anachronisms</span><span class="tag">animals</span><span class="tag">asia</span><span class="tag">asymmetric warfare</span><span class="tag">award winning</span><span class="tag">awards</span><span class="tag">bakumatsu - meiji period</span><span class="tag">based on a manga</span><span class="tag">betrayal</span><span class="tag">bishounen</span><span class="tag">black humour</span><span class="tag">body horror</span><span class="tag">bullet time</span><span class="tag">calling your attacks</span><span class="tag">canon filler</span><span class="tag">cgi</span><span class="tag">chibi</span><span class="tag">child soldier</span><span class="tag">collateral damage</span><span class="tag">comedy</span><span class="tag">coming of age</span><span class="tag">coming-of-age</span><span class="tag">crime</span><span class="tag">curse</span><span class="tag">curses</span><span class="tag">dark fantasy</span><span class="tag">death</span><span class="tag">death of a loved one</span><span class="tag">demon</span><span class="tag">demons</span><span class="tag">detailed landscapes</span><span class="tag">disaster</span><span class="tag">drama</span><span class="tag">dysfunctional family</span><span class="tag">earth</span><span class="tag">eating of humans</span><span class="tag">ending</span><span class="tag">excessive violence</span><span class="tag">faceless background characters</span><span class="tag">facial distortion</span><span class="tag">family life</span><span class="tag">family values</span><span class="tag">family without father</span><span class="tag">family without mother</span><span class="tag">fantasy</span><span class="tag">fighting</span><span class="tag">fighting-shounen</span><span class="tag">food</span><span class="tag">funny expressions</span><span class="tag">gaslamp fantasy</span><span class="tag">gender bender</span><span class="tag">ghost</span><span class="tag">gore</span><span class="tag">hero of strong character</span><span class="tag">heroine of strong character</span><span class="tag">historical</span><span class="tag">horror</span><span class="tag">hostage situation</span><span class="tag">human cannibalism</span><span class="tag">idealism</span><span class="tag">in medias res</span><span class="tag">inverted gravity</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">kids in war</span><span class="tag">liberation of slaves</span><span class="tag">literature</span><span class="tag">magic weapons</span><span class="tag">male protagonist</span><span class="tag">manga</span><span class="tag">martial arts</span><span class="tag">massacre</span><span class="tag">money</span><span class="tag">monster girl</span><span class="tag">monsters</span><span class="tag">murder</span><span class="tag">mutilation</span><span class="tag">mythology</span><span class="tag">newtype anime award</span><span class="tag">open-ended</span><span class="tag">orphan</span><span class="tag">orphans</span><span class="tag">parricide</span><span class="tag">past</span><span class="tag">place</span><span class="tag">poverty</span><span class="tag">present</span><span class="tag">primarily male cast</span><span class="tag">primarily teen cast</span><span class="tag">revenge</span><span class="tag">rotoscoping</span><span class="tag">running gag</span><span class="tag">rural</span><span class="tag">science and magic coexist</span><span class="tag">season</span><span class="tag">self-parody</span><span class="tag">sex change</span><span class="tag">shounen</span><span class="tag">siblings</span><span class="tag">slapstick</span><span class="tag">slavery</span><span class="tag">sorcery</span><span class="tag">speculative fiction</span><span class="tag">spirit realm</span><span class="tag">splatter</span><span class="tag">spring</span><span class="tag">stereotypes</span><span class="tag">struggle to survive</span><span class="tag">super deformed</span><span class="tag">super power</span><span class="tag">supernatural</span><span class="tag">superpowers</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">taisho era</span><span class="tag">taishou era</span><span class="tag">taishou period</span><span class="tag">teamwork</span><span class="tag">tentacle</span><span class="tag">the arts</span><span class="tag">thriller</span><span class="tag">time</span><span class="tag">time skip</span><span class="tag">toilet humour</span><span class="tag">tokyo</span><span class="tag">tone changes</span><span class="tag">torture</span><span class="tag">tragedy</span><span class="tag">training</span><span class="tag">travel</span><span class="tag">tropes</span><span class="tag">undead</span><span class="tag">vampire</span><span class="tag">vignetted picture</span><span class="tag">violence</span><span class="tag">visible aura</span><span class="tag">war</span><span class="tag">war-zone realities</span><span class="tag">weekly shounen jump</span><span class="tag">winter</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>

@@ -5,77 +5,58 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Gintama - Detaylar ve Kaynaklar</title>
+            <title>Gintama - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
-                <img src="https://cdn.animenewsnetwork.com/thumbnails/max500x600/encyc/A6072-12.jpg" alt="Gintama Afişi" class="poster">
+                <img src="https://myanimelist.net/images/anime/10/73274.jpg" alt="Gintama Afişi" class="poster">
                 <div class="details">
                     <h1>Gintama</h1>
-                    <span class="synonyms">Silver Soul • 銀魂</span>
+                    <span class="synonyms">Gin Tama • Gintama: Season 1 • Gintama: Series 1 • Silver Soul • Yorinuki Gintama-san • gintama tv • Гинтама • גינטאמה • جينتاما • กินทามะ • 銀魂 • 銀魂[ぎんたま] • 银魂 • 은혼</span>
                     
                     <div class="info-grid">
-                        <div class="info-card"><span>Puan</span><strong>⭐ 7.99</strong></div>
-                        <div class="info-card"><span>Format</span><strong>OVA</strong></div>
-                        <div class="info-card"><span>Bölüm</span><strong>1</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>33 dk</strong></div>
-                        <div class="info-card"><span>Çıkış</span><strong>FALL 2004</strong></div>
+                        <div class="info-card"><span>Puan</span><strong>⭐ 8.47</strong></div>
+                        <div class="info-card"><span>Format</span><strong>TV</strong></div>
+                        <div class="info-card"><span>Bölüm</span><strong>201</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>24 dk</strong></div>
+                        <div class="info-card"><span>Çıkış</span><strong>SPRING 2006</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
-                    <p><strong>Stüdyo:</strong> sunrise</p>
-                    <p><strong>Yapımcılar:</strong> Belirtilmemiş</p>
+                    <p><strong>Stüdyo:</strong> sunrise inc.</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">action</span><span class="tag">aliens</span><span class="tag">comedy</span><span class="tag">parody</span><span class="tag">samurai</span><span class="tag">science fiction</span>
+                        <span class="tag">action</span><span class="tag">adapted into japanese movie</span><span class="tag">adapted into jdrama</span><span class="tag">adapted into other media</span><span class="tag">adventure</span><span class="tag">alien</span><span class="tag">aliens</span><span class="tag">aliens living on earth</span><span class="tag">alternative past</span><span class="tag">anachronism</span><span class="tag">android</span><span class="tag">anthropomorphism</span><span class="tag">asia</span><span class="tag">awards</span><span class="tag">badminton</span><span class="tag">bakumatsu - meiji period</span><span class="tag">bakumatsu meiji period</span><span class="tag">based on a manga</span><span class="tag">bdsm</span><span class="tag">biting</span><span class="tag">body swapping</span><span class="tag">bounty hunter</span><span class="tag">boxing</span><span class="tag">breaking the fourth wall</span><span class="tag">canon filler</span><span class="tag">carefree</span><span class="tag">catchphrase</span><span class="tag">cgi</span><span class="tag">comedy</span><span class="tag">crime</span><span class="tag">cross-dressing</span><span class="tag">crossdressing</span><span class="tag">crude</span><span class="tag">daily life</span><span class="tag">death game</span><span class="tag">detective</span><span class="tag">dissociative identities</span><span class="tag">do androids dream of electric sheep?</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">edo period</span><span class="tag">educational</span><span class="tag">ensemble cast</span><span class="tag">episodic</span><span class="tag">fantasy</span><span class="tag">female harem</span><span class="tag">female protagonist</span><span class="tag">feudal japan</span><span class="tag">fictional location</span><span class="tag">fishing</span><span class="tag">found family</span><span class="tag">gag</span><span class="tag">gag humor</span><span class="tag">ghost</span><span class="tag">gore</span><span class="tag">greek mythology</span><span class="tag">has fillers</span><span class="tag">historical</span><span class="tag">homeless</span><span class="tag">humanoid alien</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">ki blast</span><span class="tag">kuudere</span><span class="tag">law and order</span><span class="tag">lgbtq+ themes</span><span class="tag">mafia</span><span class="tag">male protagonist</span><span class="tag">manga</span><span class="tag">masochism</span><span class="tag">medium awareness</span><span class="tag">meta</span><span class="tag">mixed gender harem</span><span class="tag">mopeds</span><span class="tag">mundane made awesome</span><span class="tag">narration</span><span class="tag">nearly almighty protagonist</span><span class="tag">nekomimi</span><span class="tag">newtype anime award</span><span class="tag">ninja</span><span class="tag">nonsense-comedy</span><span class="tag">oiran</span><span class="tag">old asia</span><span class="tag">parallel universe</span><span class="tag">parallel world</span><span class="tag">parody</span><span class="tag">past</span><span class="tag">perpetual ongoing</span><span class="tag">philosophy</span><span class="tag">pirates</span><span class="tag">place</span><span class="tag">plot continuity</span><span class="tag">police</span><span class="tag">pornography</span><span class="tag">primarily adult cast</span><span class="tag">randomness</span><span class="tag">red-light district</span><span class="tag">robot</span><span class="tag">robots</span><span class="tag">sadism</span><span class="tag">samurai</span><span class="tag">satire</span><span class="tag">sci fi</span><span class="tag">sci-fi</span><span class="tag">science fiction</span><span class="tag">science-fiction</span><span class="tag">scooter</span><span class="tag">shinsengumi</span><span class="tag">shounen</span><span class="tag">slapstick</span><span class="tag">social commentary</span><span class="tag">space</span><span class="tag">space travel</span><span class="tag">special squads</span><span class="tag">speculative fiction</span><span class="tag">storytelling</span><span class="tag">sudden naked guy appearance</span><span class="tag">surreal comedy</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">talks too fast</span><span class="tag">terrorism</span><span class="tag">the arts</span><span class="tag">time</span><span class="tag">toilet humour</span><span class="tag">tragedy</span><span class="tag">tropes</span><span class="tag">tsukkomi</span><span class="tag">unrequited love</span><span class="tag">verbal comedy</span><span class="tag">violence</span><span class="tag">visible aura</span><span class="tag">vulgar</span><span class="tag">weekly shounen jump</span><span class="tag">wordplay</span><span class="tag">yakuza</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>
                     <div class="source-links">
-                        <a href="https://animenewsnetwork.com/encyclopedia/anime.php?id=6072" target="_blank" class="source-btn">ANIMENEWSNETWORK</a>
+                        <a href="https://anidb.net/anime/3468" target="_blank" class="source-btn">ANIDB</a><a href="https://anilist.co/anime/918" target="_blank" class="source-btn">ANILIST</a><a href="https://anime-planet.com/anime/gintama" target="_blank" class="source-btn">ANIME-PLANET</a><a href="https://animecountdown.com/37474" target="_blank" class="source-btn">ANIMECOUNTDOWN</a><a href="https://animenewsnetwork.com/encyclopedia/anime.php?id=6236" target="_blank" class="source-btn">ANIMENEWSNETWORK</a><a href="https://anisearch.com/anime/3585" target="_blank" class="source-btn">ANISEARCH</a><a href="https://kitsu.app/anime/818" target="_blank" class="source-btn">KITSU</a><a href="https://livechart.me/anime/3591" target="_blank" class="source-btn">LIVECHART</a><a href="https://myanimelist.net/anime/918" target="_blank" class="source-btn">MYANIMELIST</a><a href="https://simkl.com/anime/37474" target="_blank" class="source-btn">SIMKL</a>
                     </div>
                 </div>
             </div>

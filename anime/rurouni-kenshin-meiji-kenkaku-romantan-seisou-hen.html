@@ -5,72 +5,53 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="referrer" content="no-referrer">
-            <title>Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou-hen - Detaylar ve Kaynaklar</title>
+            <title>Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou-hen - Detaylar</title>
             <style>
-                :root { 
-                    --bg: #000000; 
-                    --card: #0a0a0a; 
-                    --text: #ededed; 
-                    --text-muted: #888888;
-                    --neon-cyan: #00ffcc; 
-                    --neon-pink: #ff3366;
-                    --border: #222222;
-                }
-                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
-                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
-                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
-                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
-                
+                :root { --bg: #000000; --card: #0a0a0a; --text: #ededed; --text-muted: #888888; --neon-cyan: #00ffcc; --border: #222222; }
+                body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; }
+                .nav-link { display: inline-flex; margin-bottom: 30px; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
                 .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
-                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
+                
+                /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Detay Sayfası) */
+                .poster { width: 100%; max-width: 300px; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); background: #111; }
+                
                 .details { flex: 1; min-width: 300px; }
-                
                 h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
-                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
-                
+                .synonyms { color: var(--text-muted); font-size: 1rem; margin-bottom: 25px; display: block; font-style: italic; }
                 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
                 .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
-                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; }
                 .info-card strong { font-size: 1.1rem; color: #fff; }
-                
-                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
-                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; }
                 .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
                 .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
-                
                 .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
-                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
-                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
-                
-                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
+                .source-btn { border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
             </style>
         </head>
         <body>
             <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
-            
             <div class="hero">
                 <img src="https://cdn.myanimelist.net/images/anime/1971/90877.jpg" alt="Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou-hen Afişi" class="poster">
                 <div class="details">
                     <h1>Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou-hen</h1>
-                    <span class="synonyms">Kenshin - The Chapter of Atonement • Kenshin Le Vagabond : Seisou-Hen (Le Chapitre de l'expiation) • Kenshin Reflection • Kenshin el Guerrero Samurai Final</span>
+                    <span class="synonyms">Kenshin - The Chapter of Atonement • Kenshin Le Vagabond : Seisou-Hen (Le Chapitre de l'expiation) • Kenshin Reflection • Kenshin el Guerrero Samurai Final • Kenshin il Vagabondo: Capitolo del tempo • Kenshin il vagabondo: Capitolo del tempo • Kenshin le Vagabond - Le chapitre de l'expiation • Kenshin le Vagabond: Le Chapitre de l'expiation • Kenshin le vagabond - Le chapitre de l’expiation • Kenshin, El Guerrero Samurai: Final • Kenshin, el Guerrero Samurai: Final • Kenshin: The Chapter of Atonement • Lãng khách Kenshin: • RuroKen OVA 2 • Ruroni Kenshin - Meiji Kenkaku Romantan Seisohen • Rurouni Kenshin - Reflection • Rurouni Kenshin OVA 2 • Rurouni Kenshin: Meiji Kenkaku Romantan - Seisou Hen • Rurouni Kenshin: Meiji Swordsman Romantic Story - Seisouhen • Rurouni Kenshin: Reflection • Rurouni Kenshin: Renungan Sang Samurai X • Rurouni Kenshin: Seisou Hen • Rurouni Kenshin: Seisouhen • Rurouni Kenshin: The Chapter of Atonement • Rurouni Kenshin: Time Arc • Rurōni Kenshin: Meiji Kenkaku Romantan - Seisō Hen • Samurai X: Reflection • Samurai X: Reflections • Seisouhen • kenshin ova 2 • rk ova 2 • Бродяга Кэнсин: Прошедшие годы • ซามูไรพเนจร ภาคSamurai X: Reflection • ซามูไรพเนจร ภาคจบ • るろうに剣心 -明治剣客浪漫譚- 星霜編 • 浪人劍心-星霜篇 • 浪客剑心 星霜篇 • 浪客劍心 星霜篇 • 바람의 검심 - 성상편</span>
                     
                     <div class="info-grid">
                         <div class="info-card"><span>Puan</span><strong>⭐ 7.93</strong></div>
                         <div class="info-card"><span>Format</span><strong>OVA</strong></div>
                         <div class="info-card"><span>Bölüm</span><strong>2</strong></div>
-                        <div class="info-card"><span>Bölüm Süresi</span><strong>41 dk</strong></div>
+                        <div class="info-card"><span>Süre</span><strong>41 dk</strong></div>
                         <div class="info-card"><span>Çıkış</span><strong>FALL 2001</strong></div>
                         <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3>Yapım Bilgileri</h3>
                     <p><strong>Stüdyo:</strong> studio deen co., ltd.</p>
-                    <p><strong>Yapımcılar:</strong> sme visual works</p>
                     
                     <h3>Türler ve Etiketler</h3>
                     <div class="tags-container">
-                        <span class="tag">19th century</span><span class="tag">action</span><span class="tag">adult couples</span><span class="tag">age difference romance</span><span class="tag">asia</span><span class="tag">bakumatsu - meiji period</span><span class="tag">bakumatsu meiji period</span><span class="tag">based on a manga</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">hanami</span><span class="tag">heterosexual</span><span class="tag">historical</span><span class="tag">japan</span><span class="tag">japanese production</span>
+                        <span class="tag">19th century</span><span class="tag">action</span><span class="tag">adult couples</span><span class="tag">age difference romance</span><span class="tag">asia</span><span class="tag">bakumatsu - meiji period</span><span class="tag">bakumatsu meiji period</span><span class="tag">based on a manga</span><span class="tag">drama</span><span class="tag">earth</span><span class="tag">hanami</span><span class="tag">heterosexual</span><span class="tag">historical</span><span class="tag">japan</span><span class="tag">japanese production</span><span class="tag">manga</span><span class="tag">mature romance</span><span class="tag">meiji era</span><span class="tag">melancholy</span><span class="tag">past</span><span class="tag">place</span><span class="tag">revenge</span><span class="tag">romance</span><span class="tag">samurai</span><span class="tag">shounen</span><span class="tag">strong male lead</span><span class="tag">swordplay</span><span class="tag">swords & co</span><span class="tag">time</span><span class="tag">tragedy</span>
                     </div>
 
                     <h3>Dış Kaynaklar</h3>
