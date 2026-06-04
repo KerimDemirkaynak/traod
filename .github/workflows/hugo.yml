@@ -1,0 +1,29 @@
+name: Siteyi Uret ve Yayinla
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Her Pazar gecesi çalışır (Veritabanı genelde haftalık güncellenir)
+  workflow_dispatch: # Senin manuel olarak "Run Workflow" butonuna basmana izin verir
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Repoyu Klonla
+        uses: actions/checkout@v3
+
+      - name: Node.js Kur (Sürüm 20 - Yerleşik fetch için)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Siteyi Insa Et (build.js çalıştırılır)
+        run: node build.js
+
+      - name: GitHub Pages'e Yukle
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public # Sadece public klasörünü yayınlar
+          commit_message: "🚀 Otomatik Site Güncellemesi"
