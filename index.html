@@ -5,7 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="referrer" content="no-referrer">
+        
         <title>Anime Kayıt - Modern Veritabanı</title>
+        <meta name="description" content="En iyi animeleri keşfedin, puanlarına göre sıralayın. Stüdyo, yıl ve tür filtreleri ile gelişmiş anime arama motoru.">
+        <meta property="og:title" content="Anime Kayıt - Modern Veritabanı">
+        <meta property="og:description" content="Şimşek hızında, OLED uyumlu gelişmiş anime veritabanı.">
+        <meta property="og:type" content="website">
+        
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+        
         <style>
             :root { 
                 --bg: #000000; --card: #0a0a0a; --card-hover: #141414;
@@ -27,7 +35,6 @@
             .card { background: var(--card); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid var(--border); transition: all 0.3s ease; display: flex; flex-direction: column; }
             .card:hover { transform: translateY(-8px); border-color: var(--neon-cyan); }
             
-            /* POSTER ÖLÇEKLENDİRME DÜZELTMESİ (Ana Sayfa) */
             .card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-bottom: 1px solid var(--border); background: #111; }
             
             .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
@@ -43,7 +50,7 @@
         </div>
         
         <div class="controls">
-            <input type="text" id="searchInput" placeholder="Örn: Solo Leveling, Mappa, Vampire, 2024..." onkeyup="filterAnimes()">
+            <input type="text" id="searchInput" placeholder="Örn: Solo Leveling, Mappa, Vampire, 2024..." oninput="filterAnimes()">
             <select id="typeFilter" onchange="filterAnimes()">
                 <option value="">Tüm Formatlar</option>
                 <option value="TV">Sadece TV</option>
@@ -56,7 +63,7 @@
 
         <script>
             let allAnimes = [];
-            fetch('search-index.json').then(res => res.json()).then(data => {
+            fetch('./search-index.json').then(res => res.json()).then(data => {
                 allAnimes = data;
                 renderGrid(allAnimes.slice(0, 36));
             });
@@ -66,16 +73,12 @@
                 const typeFilter = document.getElementById('typeFilter').value;
                 const grid = document.getElementById('grid');
                 
-                // Birden fazla kelime yazılırsa (örn: "madhouse 2023"), hepsini içermesini sağla
                 const searchTerms = queryText.split(' ').filter(t => t.length > 0);
 
                 let filtered = allAnimes.filter(a => {
-                    // 1. Metin Araması (Her kelime eşleşmeli)
                     const matchesText = searchTerms.every(term => a.searchStr.includes(term));
-                    // 2. Format Filtresi
                     const matchesType = typeFilter === '' || 
                                         (typeFilter === 'OVA' ? (a.type === 'OVA' || a.type === 'ONA') : a.type === typeFilter);
-                    
                     return matchesText && matchesType;
                 });
                 
@@ -90,7 +93,7 @@
                 }
                 grid.innerHTML = data.map(a => `
                     <a href="anime/${a.slug}.html" class="card">
-                        <img src="${a.pic}" alt="${a.title}" loading="lazy">
+                        <img src="${a.pic}" alt="${a.title}" loading="lazy" onerror="this.onerror=null;this.src='https://via.placeholder.com/300x450/111111/00ffcc?text=Gorsel+Yok';">
                         <div class="card-body">
                             <div>
                                 <span class="badge">${a.type || 'Bilinmiyor'} ${a.year ? '- '+a.year : ''}</span>
