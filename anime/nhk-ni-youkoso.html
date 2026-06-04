@@ -4,44 +4,78 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>NHK ni Youkoso! Detayları, Puanı ve Yorumlar</title>
-            <meta name="description" content="NHK ni Youkoso! animesi 24 bölümden oluşmaktadır. Türleri: angst, antihero, asia, based on a light novel, boy meets girl. Puanı: 8.3">
+            <meta name="referrer" content="no-referrer">
+            <title>NHK ni Youkoso! - Detaylar ve Kaynaklar</title>
             <style>
-                body { background: #000; color: #ededed; font-family: sans-serif; padding: 20px; max-width: 900px; margin: auto; }
-                a { color: #00ffcc; text-decoration: none; }
-                .container { display: flex; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
-                img { width: 100%; max-width: 300px; border-radius: 12px; border: 2px solid #333; object-fit: cover; }
+                :root { 
+                    --bg: #000000; 
+                    --card: #0a0a0a; 
+                    --text: #ededed; 
+                    --text-muted: #888888;
+                    --neon-cyan: #00ffcc; 
+                    --neon-pink: #ff3366;
+                    --border: #222222;
+                }
+                body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; max-width: 1100px; margin: auto; line-height: 1.6; }
+                a { color: var(--neon-cyan); text-decoration: none; transition: 0.2s; }
+                a:hover { color: #fff; text-shadow: 0 0 10px var(--neon-cyan); }
+                .nav-link { display: inline-flex; align-items: center; margin-bottom: 30px; font-size: 1.1rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
+                
+                .hero { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 50px; }
+                .poster { width: 100%; max-width: 320px; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.8); object-fit: cover; }
                 .details { flex: 1; min-width: 300px; }
-                h1 { color: #00ffcc; margin-top: 0; }
-                .tag { background: #111; padding: 5px 10px; border-radius: 5px; border: 1px solid #333; display: inline-block; margin: 0 5px 5px 0; }
-                .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 20px 0; }
-                .info-grid div { background: #111; padding: 10px; border-radius: 8px; border: 1px solid #222; }
+                
+                h1 { color: var(--neon-cyan); margin: 0 0 10px 0; font-size: 2.8rem; line-height: 1.1; }
+                .synonyms { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 25px; display: block; }
+                
+                .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin: 30px 0; }
+                .info-card { background: var(--card); padding: 15px; border-radius: 12px; border: 1px solid var(--border); }
+                .info-card span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+                .info-card strong { font-size: 1.1rem; color: #fff; }
+                
+                h3 { color: var(--neon-cyan); border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-top: 40px; font-size: 1.4rem; }
+                
+                .tags-container { display: flex; flex-wrap: wrap; gap: 10px; }
+                .tag { background: #111; padding: 8px 16px; border-radius: 20px; border: 1px solid #333; font-size: 0.95rem; }
+                
+                .source-links { display: flex; gap: 12px; flex-wrap: wrap; }
+                .source-btn { background: transparent; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); padding: 10px 20px; border-radius: 8px; font-weight: bold; }
+                .source-btn:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 15px rgba(0,255,204,0.4); }
+                
+                .related-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+                .related-list li a { display: block; background: var(--card); padding: 12px 15px; border-radius: 8px; border: 1px solid var(--border); }
             </style>
         </head>
         <body>
-            <a href="../index.html">← Ana Sayfaya Dön</a>
-            <div class="container">
-                <img src="https://cdn.myanimelist.net/images/anime/3/52675.jpg" alt="NHK ni Youkoso! Afişi">
+            <a href="../index.html" class="nav-link">← Ana Sayfaya Dön</a>
+            
+            <div class="hero">
+                <img src="https://cdn.myanimelist.net/images/anime/3/52675.jpg" alt="NHK ni Youkoso! Afişi" class="poster">
                 <div class="details">
                     <h1>NHK ni Youkoso!</h1>
-                    <p style="color: #888;">!به ان اچ کی خوش آمدید • Bem-vindo à NHK! • Benvenuti alla NHK!</p>
+                    <span class="synonyms">!به ان اچ کی خوش آمدید • Bem-vindo à NHK! • Benvenuti alla NHK! • Benvinguts a NHK!</span>
                     
                     <div class="info-grid">
-                        <div><strong>Puan:</strong> ⭐ 8.30</div>
-                        <div><strong>Bölüm:</strong> 24</div>
-                        <div><strong>Çıkış:</strong> SUMMER 2006</div>
-                        <div><strong>Durum:</strong> FINISHED</div>
-                        <div><strong>Stüdyo:</strong> gonzo k.k.</div>
+                        <div class="info-card"><span>Puan</span><strong>⭐ 8.30</strong></div>
+                        <div class="info-card"><span>Format</span><strong>TV</strong></div>
+                        <div class="info-card"><span>Bölüm</span><strong>24</strong></div>
+                        <div class="info-card"><span>Bölüm Süresi</span><strong>23 dk</strong></div>
+                        <div class="info-card"><span>Çıkış</span><strong>SUMMER 2006</strong></div>
+                        <div class="info-card"><span>Durum</span><strong>FINISHED</strong></div>
                     </div>
                     
-                    <h3 style="color: #00ffcc; margin-top: 30px;">Türler</h3>
-                    <div>
-                        <span class="tag">angst</span><span class="tag">antihero</span><span class="tag">asia</span><span class="tag">based on a light novel</span><span class="tag">boy meets girl</span><span class="tag">comedy</span><span class="tag">coming of age</span><span class="tag">conspiracy</span><span class="tag">daily life</span><span class="tag">dark comedy</span>
+                    <h3>Yapım Bilgileri</h3>
+                    <p><strong>Stüdyo:</strong> gonzo k.k.</p>
+                    <p><strong>Yapımcılar:</strong> funimation, nhk ni youkoso! production team, omnibus promotion, victor entertainment</p>
+                    
+                    <h3>Türler ve Etiketler</h3>
+                    <div class="tags-container">
+                        <span class="tag">angst</span><span class="tag">antihero</span><span class="tag">asia</span><span class="tag">based on a light novel</span><span class="tag">boy meets girl</span><span class="tag">comedy</span><span class="tag">coming of age</span><span class="tag">conspiracy</span><span class="tag">daily life</span><span class="tag">dark comedy</span><span class="tag">death</span><span class="tag">denpa</span><span class="tag">disability</span><span class="tag">drama</span><span class="tag">drugs</span>
                     </div>
 
-                    <h3 style="color: #00ffcc; margin-top: 30px;">Dış Bağlantılar</h3>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="https://anidb.net/anime/4121" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">anidb.net</a><a href="https://anilist.co/anime/1210" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">anilist.co</a><a href="https://anime-planet.com/anime/welcome-to-the-nhk" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">anime-planet.com</a><a href="https://animecountdown.com/40231" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">animecountdown.com</a><a href="https://animenewsnetwork.com/encyclopedia/anime.php?id=6357" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">animenewsnetwork.com</a><a href="https://anisearch.com/anime/2017" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">anisearch.com</a><a href="https://kitsu.app/anime/1088" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">kitsu.app</a><a href="https://livechart.me/anime/3589" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">livechart.me</a><a href="https://myanimelist.net/anime/1210" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">myanimelist.net</a><a href="https://simkl.com/anime/40231" target="_blank" style="border: 1px solid #00ffcc; padding: 5px 10px; border-radius: 5px; font-size: 0.9rem;">simkl.com</a>
+                    <h3>Dış Kaynaklar</h3>
+                    <div class="source-links">
+                        <a href="https://anidb.net/anime/4121" target="_blank" class="source-btn">ANIDB</a><a href="https://anilist.co/anime/1210" target="_blank" class="source-btn">ANILIST</a><a href="https://anime-planet.com/anime/welcome-to-the-nhk" target="_blank" class="source-btn">ANIME-PLANET</a><a href="https://animecountdown.com/40231" target="_blank" class="source-btn">ANIMECOUNTDOWN</a><a href="https://animenewsnetwork.com/encyclopedia/anime.php?id=6357" target="_blank" class="source-btn">ANIMENEWSNETWORK</a><a href="https://anisearch.com/anime/2017" target="_blank" class="source-btn">ANISEARCH</a><a href="https://kitsu.app/anime/1088" target="_blank" class="source-btn">KITSU</a><a href="https://livechart.me/anime/3589" target="_blank" class="source-btn">LIVECHART</a><a href="https://myanimelist.net/anime/1210" target="_blank" class="source-btn">MYANIMELIST</a><a href="https://simkl.com/anime/40231" target="_blank" class="source-btn">SIMKL</a>
                     </div>
                 </div>
             </div>

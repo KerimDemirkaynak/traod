@@ -4,31 +4,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anime Keşfet - En Popüler Animeler</title>
-        <meta name="description" content="En popüler animeleri keşfedin, puanlarına göre sıralayın ve detaylarını inceleyin.">
+        <meta name="referrer" content="no-referrer">
+        <title>Anime Kayıt - Modern Veritabanı</title>
         <style>
-            :root { --bg: #000; --card: #111; --text: #ededed; --neon: #00ffcc; }
-            body { background: var(--bg); color: var(--text); font-family: sans-serif; padding: 20px; }
-            .header { text-align: center; margin-bottom: 30px; }
-            h1 span { color: var(--neon); }
-            .search { display: flex; max-width: 600px; margin: 0 auto 30px; gap: 10px; }
-            input { flex: 1; padding: 12px; background: var(--card); border: 1px solid #333; color: white; border-radius: 8px; }
-            .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; max-width: 1200px; margin: auto; }
-            .card { background: var(--card); border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid #222; transition: transform 0.2s; }
-            .card:hover { transform: translateY(-5px); border-color: var(--neon); }
-            .card img { width: 100%; height: 250px; object-fit: cover; }
-            .card-body { padding: 12px; }
-            .card h3 { font-size: 1rem; margin: 0 0 5px; }
+            :root { 
+                --bg: #000000; 
+                --card: #0a0a0a; 
+                --card-hover: #141414;
+                --text: #ededed; 
+                --text-muted: #888888;
+                --neon-cyan: #00ffcc; 
+                --neon-pink: #ff3366;
+                --border: #222222;
+            }
+            body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px 20px; margin: 0; min-height: 100vh; }
+            .header { text-align: center; margin-bottom: 50px; }
+            h1 { font-size: 2.8rem; letter-spacing: 2px; margin: 0; }
+            h1 span { color: var(--neon-cyan); text-shadow: 0 0 15px rgba(0,255,204,0.4); }
+            p.subtitle { color: var(--text-muted); font-size: 1.1rem; }
+            .search-container { max-width: 650px; margin: 0 auto 40px; position: relative; }
+            input { width: 100%; box-sizing: border-box; padding: 18px 25px; background: var(--card); border: 1px solid var(--border); color: white; border-radius: 12px; font-size: 1.1rem; outline: none; transition: all 0.3s; }
+            input:focus { border-color: var(--neon-cyan); box-shadow: 0 0 20px rgba(0,255,204,0.15); }
+            .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 25px; max-width: 1300px; margin: auto; }
+            .card { background: var(--card); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid var(--border); transition: all 0.3s ease; display: flex; flex-direction: column; }
+            .card:hover { transform: translateY(-8px); border-color: var(--neon-cyan); box-shadow: 0 10px 20px rgba(0,0,0,0.8); background: var(--card-hover); }
+            .card img { width: 100%; height: 280px; object-fit: cover; border-bottom: 1px solid var(--border); }
+            .card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+            .card h3 { font-size: 1.1rem; margin: 0 0 8px; line-height: 1.3; }
+            .badge { display: inline-block; background: rgba(0,255,204,0.1); color: var(--neon-cyan); padding: 4px 8px; border-radius: 6px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; border: 1px solid rgba(0,255,204,0.2); }
+            .stats { color: var(--text-muted); font-size: 0.9rem; display: flex; justify-content: space-between; }
         </style>
     </head>
     <body>
         <div class="header">
             <h1>Anime<span>.Kayıt</span></h1>
-            <p>Statik ve Şimşek Hızında ⚡</p>
+            <p class="subtitle">OLED Uyumlu Şimşek Hızında Veritabanı</p>
         </div>
         
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="Anime ara..." onkeyup="filterAnimes()">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Anime ara (Örn: Death Note, Naruto)..." onkeyup="filterAnimes()">
         </div>
 
         <div class="grid" id="grid">
@@ -36,240 +50,504 @@
                 <a href="anime/akane-banashi.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1162/155669.jpg" alt="Akane-banashi" loading="lazy">
                     <div class="card-body">
-                        <h3>Akane-banashi</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Akane-banashi</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/ao-ashi-season-2.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1979/156039.jpg" alt="Ao Ashi Season 2" loading="lazy">
                     <div class="card-body">
-                        <h3>Ao Ashi Season 2</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Ao Ashi Season 2</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/apotheosis-3.html" class="card">
                     <img src="https://simkl.in/posters/19/191295200ed8ab05a2_m.webp" alt="Apotheosis 3" loading="lazy">
                     <div class="card-body">
-                        <h3>Apotheosis 3</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 27 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Apotheosis 3</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>27 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/battle-spirits-core-no-hikarinushi-tachi.html" class="card">
                     <img src="https://simkl.in/posters/12/1246309696e34a1201_m.webp" alt="Battle Spirits: Core no Hikarinushi-tachi" loading="lazy">
                     <div class="card-body">
-                        <h3>Battle Spirits: Core no Hikarinushi-tachi</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Battle Spirits: Core no Hikarinushi-tachi</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/bloody-bunny-the-first-blood.html" class="card">
                     <img src="https://media.kitsu.app/anime/poster_images/13787/small.jpg" alt="Bloody Bunny: The First Blood" loading="lazy">
                     <div class="card-body">
-                        <h3>Bloody Bunny: The First Blood</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 15 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Bloody Bunny: The First Blood</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>15 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/byakuya-kyokkou-nemuri-ouji.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/17/17588_600.webp" alt="Byakuya Kyokkou: Nemuri Ouji" loading="lazy">
                     <div class="card-body">
-                        <h3>Byakuya Kyokkou: Nemuri Ouji</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Byakuya Kyokkou: Nemuri Ouji</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/choi-ni-naritai-chamcharium-raqours.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/19/19176_600.webp" alt="Choi ni Naritai Chamcharium RAqours" loading="lazy">
                     <div class="card-body">
-                        <h3>Choi ni Naritai Chamcharium RAqours</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Choi ni Naritai Chamcharium RAqours</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/clevatess-ii-majuu-no-ou-to-itsuwari-no-yuusha-denshou.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1760/155050.jpg" alt="Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou" loading="lazy">
                     <div class="card-body">
-                        <h3>Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Clevatess II: Majuu no Ou to Itsuwari no Yuusha Denshou</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/cyberpunk-edgerunners-2.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1451/150888.jpg" alt="Cyberpunk: Edgerunners 2" loading="lazy">
                     <div class="card-body">
-                        <h3>Cyberpunk: Edgerunners 2</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 10 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Cyberpunk: Edgerunners 2</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>10 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/girls-und-panzer-kore-ga-hontou-no-anzio-sen-desu-fushou-akiyama-yukari-no-sensha-kouza-italia-sensha-hen.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/20/20524_600.webp" alt="Girls und Panzer: Kore ga Hontou no Anzio-sen desu! Fushou Akiyama Yukari no Sensha Kouza - Italia Sensha Hen" loading="lazy">
                     <div class="card-body">
-                        <h3>Girls und Panzer: Kore ga Hontou no Anzio-sen desu! Fushou Akiyama Yukari no Sensha Kouza - Italia Sensha Hen</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">SPECIAL</span>
+                            <h3>Girls und Panzer: Kore ga Hontou no Anzio-sen desu! Fushou Akiyama Yukari no Sensha Kouza - Italia Sensha Hen</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/gunbuster-3.html" class="card">
                     <img src="https://cdn.anime-planet.com/images/anime/default/default-anime-winter.png" alt="Gunbuster 3" loading="lazy">
                     <div class="card-body">
-                        <h3>Gunbuster 3</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">SPECIAL</span>
+                            <h3>Gunbuster 3</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/higeki-no-genkyou-to-naru-saikyou-gedou-last-boss-joou-wa-tami-no-tame-ni-tsukushimasu-season-2.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1916/155657.jpg" alt="Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Season 2" loading="lazy">
                     <div class="card-body">
-                        <h3>Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Season 2</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu. Season 2</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/idolish-seven-first-beat-gekijou-soushuuhen.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/20/20965_600.webp" alt="Idolish Seven: First Beat! Gekijou Soushuuhen" loading="lazy">
                     <div class="card-body">
-                        <h3>Idolish Seven: First Beat! Gekijou Soushuuhen</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 2 Bölüm</p>
+                        <div>
+                            <span class="badge">MOVIE</span>
+                            <h3>Idolish Seven: First Beat! Gekijou Soushuuhen</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>2 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/izure-saikyou-no-renkinjutsushi-2nd-season.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1652/152000.jpg" alt="Izure Saikyou no Renkinjutsushi? 2nd Season" loading="lazy">
                     <div class="card-body">
-                        <h3>Izure Saikyou no Renkinjutsushi? 2nd Season</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Izure Saikyou no Renkinjutsushi? 2nd Season</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/jishou-akuyaku-reijou-na-konyakusha-no-kansatsu-kiroku.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1769/153376.jpg" alt="Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku." loading="lazy">
                     <div class="card-body">
-                        <h3>Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Jishou Akuyaku Reijou na Konyakusha no Kansatsu Kiroku.</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/kkum-ui-wang-gug-sofyruby.html" class="card">
                     <img src="https://cdn.myanimelist.net/images/anime/1842/115554.jpg" alt="Kkum-ui Wang-gug SofyRuby" loading="lazy">
                     <div class="card-body">
-                        <h3>Kkum-ui Wang-gug SofyRuby</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 52 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Kkum-ui Wang-gug SofyRuby</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>52 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nige-jouzu-no-wakagimi-2nd-season.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1289/156329.jpg" alt="Nige Jouzu no Wakagimi 2nd Season" loading="lazy">
                     <div class="card-body">
-                        <h3>Nige Jouzu no Wakagimi 2nd Season</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nige Jouzu no Wakagimi 2nd Season</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nintama-rantarou-no-uchuu-daibouken-with-cosmic-front-next-2017.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/15/15572_600.webp" alt="Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2017)" loading="lazy">
                     <div class="card-body">
-                        <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2017)</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 2 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2017)</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>2 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nintama-rantarou-no-uchuu-daibouken-with-cosmic-front-next-2019.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/15/15573_600.webp" alt="Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2019)" loading="lazy">
                     <div class="card-body">
-                        <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2019)</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 2 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front Next (2019)</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>2 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nintama-rantarou-no-uchuu-daibouken-with-cosmic-frontnext-2.html" class="card">
                     <img src="https://cdn.anime-planet.com/anime/primary/nintama-rantarou-no-uchuu-daibouken-with-cosmic-frontnext-2-1.jpg" alt="Nintama Rantarou no Uchuu Daibouken with Cosmic Front☆Next 2" loading="lazy">
                     <div class="card-body">
-                        <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front☆Next 2</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 2 Bölüm</p>
+                        <div>
+                            <span class="badge">SPECIAL</span>
+                            <h3>Nintama Rantarou no Uchuu Daibouken with Cosmic Front☆Next 2</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>2 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nora-to-oujo-to-noraneko-heart-shin-anime.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/14/14010_600.webp" alt="Nora to Oujo to Noraneko Heart (Shin Anime)" loading="lazy">
                     <div class="card-body">
-                        <h3>Nora to Oujo to Noraneko Heart (Shin Anime)</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nora to Oujo to Noraneko Heart (Shin Anime)</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nozomanu-fushi-no-boukensha-2nd-season.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1569/146966.jpg" alt="Nozomanu Fushi no Boukensha 2nd Season" loading="lazy">
                     <div class="card-body">
-                        <h3>Nozomanu Fushi no Boukensha 2nd Season</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nozomanu Fushi no Boukensha 2nd Season</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/nyanda-full-channel.html" class="card">
                     <img src="https://cdn.anime-planet.com/anime/primary/nyanda-full-channel-1.webp" alt="Nyanda? Full Channel" loading="lazy">
                     <div class="card-body">
-                        <h3>Nyanda? Full Channel</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 124 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Nyanda? Full Channel</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>124 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/saishuu-gakushou-hibike-euphonium.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1014/155041.jpg" alt="Saishuu Gakushou Hibike! Euphonium" loading="lazy">
                     <div class="card-body">
-                        <h3>Saishuu Gakushou Hibike! Euphonium</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 2 Bölüm</p>
+                        <div>
+                            <span class="badge">MOVIE</span>
+                            <h3>Saishuu Gakushou Hibike! Euphonium</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>2 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/sazae-san-oshougatsu-special-2018.html" class="card">
                     <img src="https://cdn.anisearch.com/images/anime/cover/13/13251_600.webp" alt="Sazae-san Oshougatsu Special (2018)" loading="lazy">
                     <div class="card-body">
-                        <h3>Sazae-san Oshougatsu Special (2018)</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 5 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Sazae-san Oshougatsu Special (2018)</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>5 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/the-100-girlfriends-who-really-really-really-really-really-love-you-season-3.html" class="card">
                     <img src="https://simkl.in/posters/18/187203465b1ae28efa_m.webp" alt="The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3" loading="lazy">
                     <div class="card-body">
-                        <h3>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 1 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>The 100 Girlfriends Who Really, Really, Really, Really, Really Love You Season 3</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/the-one-piece.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1105/140422.jpg" alt="The One Piece" loading="lazy">
                     <div class="card-body">
-                        <h3>The One Piece</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 12 Bölüm</p>
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>The One Piece</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>12 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/the-strongest-job-is-apparently-not-a-hero-or-a-sage-but-an-appraiser-provisional.html" class="card">
                     <img src="https://simkl.in/posters/19/194711073b91d6a615_m.webp" alt="The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)!" loading="lazy">
                     <div class="card-body">
-                        <h3>The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)!</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 4 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>The Strongest Job Is Apparently Not a Hero or a Sage, but an Appraiser (Provisional)!</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>4 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/tsuihou-sareta-tensei-juukishi-wa-game-chishiki-de-musou-suru.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1690/155778.jpg" alt="Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru" loading="lazy">
                     <div class="card-body">
-                        <h3>Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 24 Bölüm</p>
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Tsuihou sareta Tensei Juukishi wa Game Chishiki de Musou suru</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>24 Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
                 <a href="anime/watashi-no-shiawase-na-kekkon-special.html" class="card">
                     <img src="https://myanimelist.net/images/anime/1460/153740.jpg" alt="Watashi no Shiawase na Kekkon Special" loading="lazy">
                     <div class="card-body">
-                        <h3>Watashi no Shiawase na Kekkon Special</h3>
-                        <p style="color:#888; font-size:0.9rem;">⭐ 10.0 • 3 Bölüm</p>
+                        <div>
+                            <span class="badge">SPECIAL</span>
+                            <h3>Watashi no Shiawase na Kekkon Special</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>3 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/wuxia-shitu-yu-shier-zhan-ji.html" class="card">
+                    <img src="https://cdn.anisearch.com/images/anime/cover/17/17645_600.webp" alt="Wuxia Shitu Yu Shier Zhan Ji" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Wuxia Shitu Yu Shier Zhan Ji</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>1 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/yao-shen-ji-di-ban-ji.html" class="card">
+                    <img src="https://cdn.anisearch.com/images/anime/cover/20/20848_600.webp" alt="Yao Shen Ji Di-ban Ji" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Yao Shen Ji Di-ban Ji</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 10.0</span>
+                            <span>52 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/zenchi-teki-na-dokusha-no-shiten-kara.html" class="card">
+                    <img src="https://myanimelist.net/images/anime/1549/144140.jpg" alt="Zenchi-teki na Dokusha no Shiten kara" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Zenchi-teki na Dokusha no Shiten kara</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 9.8</span>
+                            <span>1 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/tian-guan-cifu-duanpian.html" class="card">
+                    <img src="https://cdn.anisearch.com/images/anime/cover/20/20782_600.webp" alt="Tian Guan Cifu Duanpian" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">ONA</span>
+                            <h3>Tian Guan Cifu Duanpian</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 9.8</span>
+                            <span>3 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/kusuriya-no-hitorigoto-3rd-season.html" class="card">
+                    <img src="https://myanimelist.net/images/anime/1862/152811.jpg" alt="Kusuriya no Hitorigoto 3rd Season" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Kusuriya no Hitorigoto 3rd Season</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 9.8</span>
+                            <span>1 Bölüm</span>
+                        </div>
+                    </div>
+                </a>
+            
+                <a href="anime/mushoku-tensei-jobless-reincarnation-season-3.html" class="card">
+                    <img src="https://simkl.in/posters/19/1932392684c961c252_m.webp" alt="Mushoku Tensei: Jobless Reincarnation Season 3" loading="lazy">
+                    <div class="card-body">
+                        <div>
+                            <span class="badge">TV</span>
+                            <h3>Mushoku Tensei: Jobless Reincarnation Season 3</h3>
+                        </div>
+                        <div class="stats">
+                            <span>⭐ 9.8</span>
+                            <span>? Bölüm</span>
+                        </div>
                     </div>
                 </a>
             
@@ -282,18 +560,24 @@
             function filterAnimes() {
                 const query = document.getElementById('searchInput').value.toLowerCase();
                 const grid = document.getElementById('grid');
-                if(query.length < 2 && query.length > 0) return; 
+                if(query.length === 1) return; 
                 
                 const filtered = query.length === 0 
-                    ? allAnimes.slice(0, 30) 
-                    : allAnimes.filter(a => a.title.toLowerCase().includes(query)).slice(0, 30);
+                    ? allAnimes.slice(0, 36) 
+                    : allAnimes.filter(a => a.title.toLowerCase().includes(query)).slice(0, 36);
                     
                 grid.innerHTML = filtered.map(a => `
                     <a href="anime/${a.slug}.html" class="card">
                         <img src="${a.pic}" alt="${a.title}" loading="lazy">
                         <div class="card-body">
-                            <h3>${a.title}</h3>
-                            <p style="color:#888; font-size:0.9rem;">⭐ ${a.score} • ${a.episodes || '?'} Bölüm</p>
+                            <div>
+                                <span class="badge">${a.type || 'Bilinmiyor'}</span>
+                                <h3>${a.title}</h3>
+                            </div>
+                            <div class="stats">
+                                <span>⭐ ${a.score}</span>
+                                <span>${a.episodes || '?'} Bölüm</span>
+                            </div>
                         </div>
                     </a>
                 `).join('');
