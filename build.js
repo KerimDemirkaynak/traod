@@ -34,13 +34,13 @@ async function buildSite() {
         .sort((a, b) => b.score.arithmeticMean - a.score.arithmeticMean)
         .slice(0, 2500);
 
-    // URL çakışmalarını ve boş URL'leri önlemek için her animeye benzersiz bir Slug (Örn: naruto-5) atıyoruz.
+    // URL çakışmalarını önlemek için Unique Slug
     topAnimes.forEach((anime, index) => {
         const baseSlug = slugify(anime.title) || 'anime';
         anime.uniqueSlug = `${baseSlug}-${index}`;
     });
 
-    // 1. ARAMA İNDEKSİ (Search Index)
+    // 1. ARAMA İNDEKSİ (Yüksek çözünürlüklü görsel önceliği ile güncellendi)
     const searchIndex = topAnimes.map(anime => {
         const year = anime.animeSeason?.year || '';
         const synonyms = anime.synonyms ? anime.synonyms.join(' ') : '';
@@ -50,7 +50,8 @@ async function buildSite() {
         return {
             title: anime.title,
             slug: anime.uniqueSlug,
-            pic: anime.thumbnail || anime.picture,
+            // BURASI DÜZELTİLDİ: Artık thumbnail değil, doğrudan yüksek kaliteli picture çekiliyor
+            pic: anime.picture || anime.thumbnail,
             score: anime.score.arithmeticMean.toFixed(1),
             episodes: anime.episodes,
             type: anime.type,
@@ -60,7 +61,7 @@ async function buildSite() {
     });
     fs.writeFileSync(path.join(PUBLIC_DIR, 'search-index.json'), JSON.stringify(searchIndex));
 
-    // 2. ANA SAYFA (index.html) - Meta Taglar ve Favicon Eklendi
+    // 2. ANA SAYFA (index.html)
     const indexHtml = `
     <!DOCTYPE html>
     <html lang="tr">
@@ -176,7 +177,7 @@ async function buildSite() {
     
     fs.writeFileSync(path.join(PUBLIC_DIR, 'index.html'), indexHtml);
 
-    // 3. DETAY SAYFALARI
+    // 3. DETAY SAYFALARI (Burada zaten yüksek kalite kullanıyorduk, aynen devam ediyor)
     console.log("📄 Anime detay sayfaları üretiliyor...");
     topAnimes.forEach(anime => {
         const season = anime.animeSeason ? `${anime.animeSeason.season} ${anime.animeSeason.year}` : 'Bilinmiyor';
@@ -260,7 +261,7 @@ async function buildSite() {
         fs.writeFileSync(path.join(ANIME_DIR, `${anime.uniqueSlug}.html`), detailHtml);
     });
 
-    console.log("🚀 Yapılandırma tamamlandı! Bütün kritik SEO ve Link hataları çözüldü.");
+    console.log("🚀 Yapılandırma tamamlandı! Yüksek kaliteli görseller yayına hazır.");
 }
 
 buildSite().catch(err => {
