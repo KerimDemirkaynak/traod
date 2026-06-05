@@ -3,6 +3,9 @@ const path = require('path');
 
 const DATA_URL = 'https://github.com/manami-project/anime-offline-database/releases/latest/download/anime-offline-database-minified.json';
 
+// GitHub Pages Canlı Sitenin Adresi (Sitemap İçin Kritik)
+const BASE_URL = 'https://kerimdemirkaynak.github.io/traod'; 
+
 const PUBLIC_DIR = path.join(__dirname, 'public');
 const ANIME_DIR = path.join(PUBLIC_DIR, 'anime');
 
@@ -40,7 +43,7 @@ async function buildSite() {
         anime.uniqueSlug = `${baseSlug}-${index}`;
     });
 
-    // 1. ARAMA İNDEKSİ (Yüksek çözünürlüklü görsel önceliği ile güncellendi)
+    // 1. ARAMA İNDEKSİ
     const searchIndex = topAnimes.map(anime => {
         const year = anime.animeSeason?.year || '';
         const synonyms = anime.synonyms ? anime.synonyms.join(' ') : '';
@@ -50,7 +53,6 @@ async function buildSite() {
         return {
             title: anime.title,
             slug: anime.uniqueSlug,
-            // BURASI DÜZELTİLDİ: Artık thumbnail değil, doğrudan yüksek kaliteli picture çekiliyor
             pic: anime.picture || anime.thumbnail,
             score: anime.score.arithmeticMean.toFixed(1),
             episodes: anime.episodes,
@@ -177,7 +179,7 @@ async function buildSite() {
     
     fs.writeFileSync(path.join(PUBLIC_DIR, 'index.html'), indexHtml);
 
-    // 3. DETAY SAYFALARI (Burada zaten yüksek kalite kullanıyorduk, aynen devam ediyor)
+    // 3. DETAY SAYFALARI
     console.log("📄 Anime detay sayfaları üretiliyor...");
     topAnimes.forEach(anime => {
         const season = anime.animeSeason ? `${anime.animeSeason.season} ${anime.animeSeason.year}` : 'Bilinmiyor';
@@ -261,7 +263,38 @@ async function buildSite() {
         fs.writeFileSync(path.join(ANIME_DIR, `${anime.uniqueSlug}.html`), detailHtml);
     });
 
-    console.log("🚀 Yapılandırma tamamlandı! Yüksek kaliteli görseller yayına hazır.");
+    // 4. SİTE HARİTASI (SITEMAP.XML) VE ROBOTS.TXT
+    console.log("🗺️ Site haritası ve robots.txt oluşturuluyor...");
+    const today = new Date().toISOString().split('T')[0];
+
+    let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>${BASE_URL}/</loc>
+        <lastmod>${today}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>`;
+
+    topAnimes.forEach(anime => {
+        sitemapXml += `
+    <url>
+        <loc>${BASE_URL}/anime/${anime.uniqueSlug}.html</loc>
+        <lastmod>${today}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>`;
+    });
+
+    sitemapXml += `\n</urlset>`;
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapXml);
+
+    const robotsTxt = `User-agent: *
+Allow: /
+Sitemap: ${BASE_URL}/sitemap.xml`;
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'robots.txt'), robotsTxt);
+
+    console.log("🚀 Yapılandırma tamamlandı! Full SEO uyumlu site yayına hazır.");
 }
 
 buildSite().catch(err => {
